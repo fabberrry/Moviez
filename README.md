@@ -3,6 +3,15 @@
 This is a web-based project designed for managing movies and user interactions. The application implements a **Spring Boot backend** with **MongoDB** for data storage and a **React-based frontend**. It includes HTML templates for user management, styled with CSS and Bootstrap, and JavaScript for form validation and interactivity.
 
 ---
+## 🎬 Project Demo
+
+<p align="center">
+  <img src="assets/movie-demo.gif" width="850" alt="Movie App Demo"/>
+</p>
+
+<p align="center">
+  A quick walkthrough of login, browsing movies, and adding reviews.
+</p>
 
 ## **Features**
 
@@ -31,27 +40,6 @@ This is a web-based project designed for managing movies and user interactions. 
 - Bootstrap for styling and responsiveness
 - JavaScript for form validation and interactivity
 
----
-
-## **Project Structure**
-
-### **Backend** (`backend/`)
-- `src/main/java/`: Contains all backend logic
-  - `MovieController.java`: Handles movie-related APIs
-  - `ReviewController.java`: Manages user reviews
-  - `UserController.java`: Manages user-related functionalities
-- `src/main/resources/webapp/`: JSP files for user management
-  - `login.jsp`: Login page
-  - `register.jsp`: Registration page
-  - `validation.js`: Javascript form validation
-  
-
-### **Frontend** (`frontend/`)
-- `src/`: Contains React application
-  - `components/`: All reusable React components
-  - `App.js`: Main application logic
-  - `index.js`: Entry point of the application
-- `public/`: Contains public assets (e.g., images, icons)
 
 ---
 
@@ -97,43 +85,9 @@ This is a web-based project designed for managing movies and user interactions. 
 
 ---
 
-## **Folder Structure**
-
-```
-movie/
-├── backend/
-│   ├── src/main/java/
-│   │   ├── dev.javaproject.movie/
-│   │   │   ├── controllers/
-│   │   │   │   ├── MovieController.java
-│   │   │   │   ├── UserController.java
-│   │   │   │   ├── ReviewController.java
-│   │   │   ├── services/
-│   │   │   ├── repositories/
-│   ├── src/main/resources/templates/
-│   │   ├── login.jsp
-│   │   ├── register.jsp
-│   │   ├── dashboard.jsp
-│   ├── pom.xml
-
-```
-
----
-
-<!-- ## **Validation and Testing**
+## **Validation and Testing**
 - Tested for cross-browser compatibility.
 - Verified responsiveness across devices using Chrome DevTools.
-- Form validation and interactivity thoroughly checked. -->
-
-## **Bean Validation**
-- Bean validation is used on user and movie models using annotations like `@NotNull`, `@Email`, `@Size`, and custom validation annotations where needed.
-- The validation annotations ensure that the user inputs (username, password, email) and movie details are correct before any data is processed or stored.
-
----
----
-## **Exception Handling**
-- Implemented custom exception handling to capture and handle errors.
-- Used `@ControllerAdvice` to handle exceptions globally and provide user-friendly error messages for issues like invalid inputs or server errors.
-- Proper response status codes are returned for each exception type to maintain clear communication between the frontend and backend.
+- Form validation and interactivity thoroughly checked.
 
 ---
